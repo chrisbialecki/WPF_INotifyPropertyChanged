@@ -23,6 +23,7 @@ namespace WPF_INotifyPropertyChanged_2
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new Person();
         }
     }
 }
