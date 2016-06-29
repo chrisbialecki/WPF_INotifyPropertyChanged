@@ -45,7 +45,7 @@ namespace WPF_INotifyPropertyChanged_2
         {
             get
             {
-                return string.Format("{0} {1}", FirstName, LastName); }
+                return string.Format(FirstName+ " " + LastName); }
         }
     
 
