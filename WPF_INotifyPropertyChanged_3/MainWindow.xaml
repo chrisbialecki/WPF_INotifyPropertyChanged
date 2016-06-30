@@ -23,19 +23,24 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock TextAlignment="Center" Margin="5" Background="Beige">Binding type</TextBlock>
+        <TextBlock TextAlignment="Center" Margin="5" Background="Beige">Binding mode</TextBlock>
         <TextBlock TextAlignment="Center" Margin="5" Background="Beige" Grid.Column="1">Read out</TextBlock>
-        <TextBlock TextAlignment="Center" Margin="5" Background="Beige" Grid.Column="2">Binding mode</TextBlock>
+        <TextBlock TextAlignment="Center" Margin="5" Background="Beige" Grid.Column="2">Update source</TextBlock>
 
         <TextBlock TextAlignment="Center" Margin="5" Grid.Row="1">Bound value</TextBlock>
         <TextBlock TextAlignment="Center" Margin="5" Grid.Row="2">Two way</TextBlock>
         <TextBlock TextAlignment="Center" Margin="5" Grid.Row="3">From source only</TextBlock>
         <TextBlock TextAlignment="Center" Margin="5" Grid.Row="4">To source only</TextBlock>
 
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding BoundValue, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding BoundValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock TextAlignment="Center" Margin="5" Grid.Row="2" Grid.Column="2" Text="Property changed"/>
+        <TextBlock TextAlignment="Center" Margin="5" Grid.Row="3" Grid.Column="2" Text="None"/>
+        <TextBlock TextAlignment="Center" Margin="5" Grid.Row="4" Grid.Column="2" Text="Lost focus"/>
+        <TextBlock TextAlignment="Center" Margin="5" Grid.Row="5" Grid.Column="2" Text="None"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding BoundValue}"/>
+        <TextBox x:Name="TwoWay" Grid.Row="2" Grid.Column="1" Text="{Binding BoundValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding BoundValue, Mode=OneWay}"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding BoundValue, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding BoundValue, Mode=OneWayToSource, UpdateSourceTrigger=LostFocus}"/>
         
         
             <TextBlock TextAlignment="Center" Margin="5" Grid.Row="5">Explicit</TextBlock>

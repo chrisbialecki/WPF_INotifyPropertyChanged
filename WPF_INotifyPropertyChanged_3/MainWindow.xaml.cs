@@ -24,6 +24,7 @@ namespace WPF_INotifyPropertyChanged_3
         {
             InitializeComponent();
             DataContext = new BoundValueModel();
+         
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
