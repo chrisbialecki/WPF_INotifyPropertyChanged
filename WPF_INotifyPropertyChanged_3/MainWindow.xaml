@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPF_INotifyPropertyChanged_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_INotifyPropertyChanged_3"
+        mc:Ignorable="d"
+        Title="Binding types" Height="230" Width="525">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock TextAlignment="Center" Margin="5" Background="Beige">Binding type</TextBlock>
+        <TextBlock TextAlignment="Center" Margin="5" Background="Beige" Grid.Column="1">Read out</TextBlock>
+        <TextBlock TextAlignment="Center" Margin="5" Background="Beige" Grid.Column="2">Binding mode</TextBlock>
+
+        <TextBlock TextAlignment="Center" Margin="5" Grid.Row="1">Bound value</TextBlock>
+        <TextBlock TextAlignment="Center" Margin="5" Grid.Row="2">Two way</TextBlock>
+        <TextBlock TextAlignment="Center" Margin="5" Grid.Row="3">From source only</TextBlock>
+        <TextBlock TextAlignment="Center" Margin="5" Grid.Row="4">To source only</TextBlock>
+
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding BoundValue, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding BoundValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding BoundValue, Mode=OneWay}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding BoundValue, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+        
+        
+            <TextBlock TextAlignment="Center" Margin="5" Grid.Row="5">Explicit</TextBlock>
+            <TextBox Name="Explicit" Grid.Row="5" Grid.Column="1" Text="{Binding BoundValue, Mode=TwoWay, UpdateSourceTrigger=Explicit}"/>
+            <Button Width="60" Grid.Row="6" Click="Button_Click">Update</Button>
+            
+        
+       
+    </Grid>
+</Window>
