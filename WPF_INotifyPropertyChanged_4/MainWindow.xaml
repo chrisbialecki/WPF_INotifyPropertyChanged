@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_INotifyPropertyChanged_4"
         mc:Ignorable="d"
-        Title="Age slider" Height="180" Width="250" ResizeMode="NoResize">
+        Title="Age slider" Height="180" Width="250">
     <Grid Margin="5 20 5 5">
         
         <Grid.ColumnDefinitions>
