@@ -23,6 +23,7 @@ namespace WPF_INotifyPropertyChanged_4
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new AgeModel();
         }
     }
 }
