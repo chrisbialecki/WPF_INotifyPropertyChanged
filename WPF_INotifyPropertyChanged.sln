@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged_3", "WPF_INotifyPropertyChanged_3\WPF_INotifyPropertyChanged_3.csproj", "{2F20BB5B-7BF3-4601-BD6D-B41C8FA3CFDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged_4", "WPF_INotifyPropertyChanged_4\WPF_INotifyPropertyChanged_4.csproj", "{66FBCCE1-BCFF-4E40-92AD-541DE42CD134}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2F20BB5B-7BF3-4601-BD6D-B41C8FA3CFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F20BB5B-7BF3-4601-BD6D-B41C8FA3CFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F20BB5B-7BF3-4601-BD6D-B41C8FA3CFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66FBCCE1-BCFF-4E40-92AD-541DE42CD134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66FBCCE1-BCFF-4E40-92AD-541DE42CD134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66FBCCE1-BCFF-4E40-92AD-541DE42CD134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66FBCCE1-BCFF-4E40-92AD-541DE42CD134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
